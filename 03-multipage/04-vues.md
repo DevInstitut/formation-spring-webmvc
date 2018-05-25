@@ -1,6 +1,6 @@
 # Gestion des vues
 
-* Les classes d'implémentation de l'interface ViewResolver fournissent le mécanisme de sélection des vues selon un identifiant logique retourné par la méthode gestionnaire du controller.
+* Les classes d'implémentation de l'interface `ViewResolver` fournissent le mécanisme de sélection des vues selon un identifiant logique retourné par la méthode gestionnaire du controller.
 
 * La plus courante d'utilisation avec les JSPs est InternalResourceViewResolver qui extrait la ressource depuis un chemin fabriqué avec le nom logique.
 

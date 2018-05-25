@@ -51,15 +51,3 @@ public class WebAppInitializer implements WebApplicationInitializer {
     }
 }
 ```
-<<<
-
-== Activer Spring MVC
-Activer	Spring	MVC avec **@EnableWebMvc**.
-
-```java
-@Configuration
-@EnableWebMvc
-@ComponentScan("fr.pizzeria.spring.mvc.controller")
-public class PizzeriaSpringConfig {
-}
-```

@@ -9,6 +9,7 @@
   * [Retour de méthode de contrôleur](03-multipage/03-retour.md)
   * [Gestion des vues](03-multipage/04-vues.md)
   * [Formulaires](03-multipage/05-formulaires.md)
+  * [Travaux Pratiques](03-multipage/99-tp.md)
 * [Web API](04-webapi/README.md)
   * [@ResponseBody](04-webapi/01-responsebody.md)
   * [@RestController](04-webapi/02-rest-controller.md)
