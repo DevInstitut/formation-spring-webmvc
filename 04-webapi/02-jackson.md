@@ -20,7 +20,7 @@ Pour permettre à Spring Web MVC de convertir automatiquement des objets Java et
 
 Exemple :
 
-```java
+```xml
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
