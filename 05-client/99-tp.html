@@ -474,6 +474,69 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="travaux-pratiques">Travaux Pratiques</h1>
+<h2 id="ressource-collegue">Ressource <code>Collegue</code></h2>
+<p>Vous avez acc&#xE8;s &#xE0; une Web API sur la ressource <code>Collegue</code> : <a href="http://collegues-api.cleverapps.io/collegues" target="_blank">http://collegues-api.cleverapps.io/collegues</a>.</p>
+<p>Exemple de r&#xE9;ponse :</p>
+<pre><code class="lang-java">[
+  {
+    <span class="hljs-string">&quot;matricule&quot;</span>: <span class="hljs-string">&quot;bd540e65&quot;</span>,
+    <span class="hljs-string">&quot;nom&quot;</span>: <span class="hljs-string">&quot;Ross&quot;</span>,
+    <span class="hljs-string">&quot;prenom&quot;</span>: <span class="hljs-string">&quot;Roberts&quot;</span>,
+    <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;robertsross@sultraxin.com&quot;</span>,
+    <span class="hljs-string">&quot;dateNaissance&quot;</span>: <span class="hljs-string">&quot;1980-03-13T05:22:33 -01:00&quot;</span>,
+    <span class="hljs-string">&quot;sexe&quot;</span>: <span class="hljs-string">&quot;male&quot;</span>,
+    <span class="hljs-string">&quot;adresse&quot;</span>: <span class="hljs-string">&quot;363 Dunne Court, Gardners, 3979&quot;</span>,
+    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;$2a$04$Vbug2lwwJGrvUXTj6z7ff.97IzVBkrJ1XfApfGNl.Z695zqcnPYra&quot;</span>,
+    <span class="hljs-string">&quot;photo&quot;</span>: <span class="hljs-string">&quot;https://randomuser.me/api/portraits/men/76.jpg&quot;</span>,
+    <span class="hljs-string">&quot;subalternes&quot;</span>: [
+      <span class="hljs-string">&quot;75e8048c&quot;</span>,
+      <span class="hljs-string">&quot;8b2d3ac7&quot;</span>
+    ],
+    <span class="hljs-string">&quot;departement&quot;</span>: <span class="hljs-string">&quot;DSI&quot;</span>
+  },
+  {
+    <span class="hljs-string">&quot;matricule&quot;</span>: <span class="hljs-string">&quot;75e8048c&quot;</span>,
+    <span class="hljs-string">&quot;nom&quot;</span>: <span class="hljs-string">&quot;Bullock&quot;</span>,
+    <span class="hljs-string">&quot;prenom&quot;</span>: <span class="hljs-string">&quot;Jackson&quot;</span>,
+    <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;jacksonbullock@sultraxin.com&quot;</span>,
+    <span class="hljs-string">&quot;dateNaissance&quot;</span>: <span class="hljs-string">&quot;1971-02-16T08:37:15 -01:00&quot;</span>,
+    <span class="hljs-string">&quot;sexe&quot;</span>: <span class="hljs-string">&quot;male&quot;</span>,
+    <span class="hljs-string">&quot;adresse&quot;</span>: <span class="hljs-string">&quot;289 Gardner Avenue, Gilmore, 7992&quot;</span>,
+    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;$2a$04$Vbug2lwwJGrvUXTj6z7ff.97IzVBkrJ1XfApfGNl.Z695zqcnPYra&quot;</span>,
+    <span class="hljs-string">&quot;photo&quot;</span>: <span class="hljs-string">&quot;https://randomuser.me/api/portraits/men/90.jpg&quot;</span>,
+    <span class="hljs-string">&quot;subalternes&quot;</span>: [
+      <span class="hljs-string">&quot;6c8be60e&quot;</span>,
+      <span class="hljs-string">&quot;7befca85&quot;</span>,
+      <span class="hljs-string">&quot;89dde79f&quot;</span>
+    ],
+    <span class="hljs-string">&quot;departement&quot;</span>: <span class="hljs-string">&quot;DSI/DEV&quot;</span>
+  },
+  ...
+]
+</code></pre>
+<p>Il est possible de faire une recherche par matricule : <a href="http://collegues-api.cleverapps.io/collegues?matricule=75e8048c" target="_blank">http://collegues-api.cleverapps.io/collegues?matricule=75e8048c</a></p>
+<pre><code class="lang-json">[
+  {
+    <span class="hljs-string">&quot;matricule&quot;</span>: <span class="hljs-string">&quot;75e8048c&quot;</span>,
+    <span class="hljs-string">&quot;nom&quot;</span>: <span class="hljs-string">&quot;Bullock&quot;</span>,
+    <span class="hljs-string">&quot;prenom&quot;</span>: <span class="hljs-string">&quot;Jackson&quot;</span>,
+    <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;jacksonbullock@sultraxin.com&quot;</span>,
+    <span class="hljs-string">&quot;dateNaissance&quot;</span>: <span class="hljs-string">&quot;1971-02-16T08:37:15 -01:00&quot;</span>,
+    <span class="hljs-string">&quot;sexe&quot;</span>: <span class="hljs-string">&quot;male&quot;</span>,
+    <span class="hljs-string">&quot;adresse&quot;</span>: <span class="hljs-string">&quot;289 Gardner Avenue, Gilmore, 7992&quot;</span>,
+    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;$2a$04$Vbug2lwwJGrvUXTj6z7ff.97IzVBkrJ1XfApfGNl.Z695zqcnPYra&quot;</span>,
+    <span class="hljs-string">&quot;photo&quot;</span>: <span class="hljs-string">&quot;https://randomuser.me/api/portraits/men/90.jpg&quot;</span>,
+    <span class="hljs-string">&quot;subalternes&quot;</span>: [
+      <span class="hljs-string">&quot;6c8be60e&quot;</span>,
+      <span class="hljs-string">&quot;7befca85&quot;</span>,
+      <span class="hljs-string">&quot;89dde79f&quot;</span>
+    ],
+    <span class="hljs-string">&quot;departement&quot;</span>: <span class="hljs-string">&quot;DSI/DEV&quot;</span>
+  }
+]
+</code></pre>
+<h2 id="contr&#xF4;le-existence-coll&#xE8;gue">Contr&#xF4;le existence coll&#xE8;gue</h2>
+<p>Compl&#xE9;ter le formulaire de cr&#xE9;ation d&apos;un employ&#xE9; pour ne permettre d&apos;ins&#xE9;rer uniquement des employ&#xE9;s dont le matricule existe (via l&apos;API Coll&#xE8;gue).</p>
 
                                 
                                 </section>
@@ -513,7 +576,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Travaux Pratiques","level":"1.6.1","depth":2,"previous":{"title":"Client API","level":"1.6","depth":1,"path":"05-client/README.md","ref":"05-client/README.md","articles":[{"title":"Travaux Pratiques","level":"1.6.1","depth":2,"path":"05-client/99-tp.md","ref":"05-client/99-tp.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"05-client/99-tp.md","mtime":"2018-05-28T08:37:58.613Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T08:39:01.596Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Travaux Pratiques","level":"1.6.1","depth":2,"previous":{"title":"Client API","level":"1.6","depth":1,"path":"05-client/README.md","ref":"05-client/README.md","articles":[{"title":"Travaux Pratiques","level":"1.6.1","depth":2,"path":"05-client/99-tp.md","ref":"05-client/99-tp.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"05-client/99-tp.md","mtime":"2018-05-28T09:44:47.068Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T09:46:05.425Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
