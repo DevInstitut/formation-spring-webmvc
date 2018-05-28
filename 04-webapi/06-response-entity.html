@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Spring Web MVC · Formation Spring Web MVC</title>
+        <title>ResponseEntity · Formation Spring Web MVC</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../02-configuration/" />
+    <link rel="next" href="07-erreurs.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="05-request-body.html" />
     
 
     </head>
@@ -109,9 +109,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
             
-                <a href="./">
+                <a href="../01-introduction/">
             
                     
                     Spring Web MVC
@@ -277,9 +277,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../04-webapi/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../04-webapi/">
+                <a href="./">
             
                     
                     Web API
@@ -291,9 +291,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../04-webapi/01-json.html">
+        <li class="chapter " data-level="1.5.1" data-path="01-json.html">
             
-                <a href="../04-webapi/01-json.html">
+                <a href="01-json.html">
             
                     
                     Le format JSON
@@ -304,9 +304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../04-webapi/02-jackson.html">
+        <li class="chapter " data-level="1.5.2" data-path="02-jackson.html">
             
-                <a href="../04-webapi/02-jackson.html">
+                <a href="02-jackson.html">
             
                     
                     Projet Jackson
@@ -317,9 +317,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../04-webapi/03-responsebody.html">
+        <li class="chapter " data-level="1.5.3" data-path="03-responsebody.html">
             
-                <a href="../04-webapi/03-responsebody.html">
+                <a href="03-responsebody.html">
             
                     
                     @ResponseBody
@@ -330,9 +330,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../04-webapi/04-rest-controller.html">
+        <li class="chapter " data-level="1.5.4" data-path="04-rest-controller.html">
             
-                <a href="../04-webapi/04-rest-controller.html">
+                <a href="04-rest-controller.html">
             
                     
                     @RestController
@@ -343,9 +343,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../04-webapi/05-request-body.html">
+        <li class="chapter " data-level="1.5.5" data-path="05-request-body.html">
             
-                <a href="../04-webapi/05-request-body.html">
+                <a href="05-request-body.html">
             
                     
                     @RequestBody
@@ -356,9 +356,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../04-webapi/06-response-entity.html">
+        <li class="chapter active" data-level="1.5.6" data-path="06-response-entity.html">
             
-                <a href="../04-webapi/06-response-entity.html">
+                <a href="06-response-entity.html">
             
                     
                     ResponseEntity
@@ -369,9 +369,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.7" data-path="../04-webapi/07-erreurs.html">
+        <li class="chapter " data-level="1.5.7" data-path="07-erreurs.html">
             
-                <a href="../04-webapi/07-erreurs.html">
+                <a href="07-erreurs.html">
             
                     
                     Gérer les erreurs via des exceptions
@@ -382,9 +382,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.8" data-path="../04-webapi/99-tp.html">
+        <li class="chapter " data-level="1.5.8" data-path="99-tp.html">
             
-                <a href="../04-webapi/99-tp.html">
+                <a href="99-tp.html">
             
                     
                     Travaux pratiques
@@ -460,7 +460,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Spring Web MVC</a>
+        <a href=".." >ResponseEntity</a>
     </h1>
 </div>
 
@@ -475,7 +475,85 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="spring-web-mvc">Spring Web MVC</h1>
+                                <h1 id="responseentity">ResponseEntity</h1>
+<pre><code class="lang-java">
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HandleController</span> </span>{
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/handle&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ResponseEntity&lt;String&gt; <span class="hljs-title">handle</span><span class="hljs-params">()</span> </span>{
+        HttpHeaders responseHeaders = <span class="hljs-keyword">new</span> HttpHeaders();
+        responseHeaders.set(<span class="hljs-string">&quot;MyResponseHeader&quot;</span>, <span class="hljs-string">&quot;MyValue&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseEntity&lt;String&gt;(<span class="hljs-string">&quot;Hello World&quot;</span>, responseHeaders, HttpStatus.CREATED);
+    }
+
+}
+</code></pre>
+<p>Noter que le type retour de la m&#xE9;thode est <code>ResponseEntity&lt;T&gt;</code> o&#xF9; T d&#xE9;signe le type d&#xE9;signe la nature du contenu du corps de la r&#xE9;ponse.</p>
+<p>Cette structure permet de param&#xE9;trer la r&#xE9;ponse HTTP (status, ent&#xEA;tes, ...)</p>
+<h2 id="personnaliser-le-code-http">Personnaliser le code HTTP</h2>
+<pre><code class="lang-java">
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeController</span> </span>{
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/list&quot;</span>)
+    <span class="hljs-keyword">public</span> ResponseEntity&lt;List&lt;Grade&gt;&gt; findAll() {
+        List&lt;Grade&gt; allGrades = <span class="hljs-keyword">this</span>.gradeRepo.findAll();
+
+        <span class="hljs-comment">// En pr&#xE9;cisant en &quot;dur&quot; le code de la r&#xE9;ponse via la m&#xE9;thode statique status</span>
+        <span class="hljs-comment">// return  ResponseEntity.status(200).body(allGrades);</span>
+
+        <span class="hljs-comment">// HttpStatus est une &#xE9;num&#xE9;ration regroupant les codes HTTP usuels</span>
+        <span class="hljs-keyword">return</span> ResponseEntity.status(HttpStatus.OK).body(allGrades);
+    }
+
+}
+</code></pre>
+<h2 id="en-cas-de-succ&#xE8;s">En cas de succ&#xE8;s</h2>
+<p>La r&#xE9;ponse est id&#xE9;alement consitu&#xE9;e d&apos;une r&#xE9;ponse avec un code HTTP de la famille des 2XX.</p>
+<p>Exemple de code HTTP 200 :</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeController</span> </span>{
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/grades&quot;</span>)
+    <span class="hljs-keyword">public</span> ResponseEntity&lt;List&lt;Grade&gt;&gt; findAll() {
+        List&lt;Grade&gt; allGrades = <span class="hljs-keyword">this</span>.gradeRepo.findAll();
+
+        <span class="hljs-comment">// la m&#xE9;thode ok =&gt; code HTTP 200</span>
+        <span class="hljs-keyword">return</span> ResponseEntity.ok(allGrades);
+    }
+}
+</code></pre>
+<p>Exemple de code HTTP 201 :</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeController</span> </span>{
+
+        <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">&quot;/grades&quot;</span>)
+        <span class="hljs-function"><span class="hljs-keyword">public</span> ResponseEntity&lt;Grade&gt; <span class="hljs-title">create</span><span class="hljs-params">(@RequestParam(<span class="hljs-string">&quot;code&quot;</span>)</span> String code, @<span class="hljs-title">RequestParam</span><span class="hljs-params">(<span class="hljs-string">&quot;nb_heures&quot;</span>)</span> BigDecimal nbHeuresBase, @<span class="hljs-title">RequestParam</span><span class="hljs-params">(<span class="hljs-string">&quot;taux&quot;</span>)</span> BigDecimal tauxBase) </span>{
+            Grade grade = <span class="hljs-keyword">new</span> Grade();
+            grade.setCode(code);
+            grade.setNbHeuresBase(nbHeuresBase);
+            grade.setTauxBase(tauxBase);
+            <span class="hljs-keyword">this</span>.gradeRepo.save(grade);
+
+            URI uri = MvcUriComponentsBuilder
+                    .fromMethodCall(
+                            MvcUriComponentsBuilder.on(DemoWebApiController.class).findGrade(grade.getCode())
+                    ).build().encode().toUri();
+
+            <span class="hljs-comment">// R&#xE9;ponse</span>
+            <span class="hljs-comment">//      Code = 201</span>
+            <span class="hljs-comment">//      Ent&#xEA;te Location = &lt;URI&gt;</span>
+            <span class="hljs-comment">//      Corps = objet Grade</span>
+            <span class="hljs-keyword">return</span> ResponseEntity.created(uri).body(grade);
+        }
+
+        <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/grades/{code}&quot;</span>)
+        <span class="hljs-function"><span class="hljs-keyword">public</span> ResponseEntity&lt;Grade&gt; <span class="hljs-title">findGrade</span><span class="hljs-params">(@PathVariable String code)</span> </span>{
+            <span class="hljs-keyword">return</span> ResponseEntity.ok(<span class="hljs-keyword">this</span>.gradeRepo.findByCode(code));
+        }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -503,12 +581,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="05-request-body.html" class="navigation navigation-prev " aria-label="Previous page: @RequestBody">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../02-configuration/" class="navigation navigation-next " aria-label="Next page: Configuration">
+                <a href="07-erreurs.html" class="navigation navigation-next " aria-label="Next page: Gérer les erreurs via des exceptions">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -519,7 +597,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Spring Web MVC","level":"1.2","depth":1,"next":{"title":"Configuration","level":"1.3","depth":1,"path":"02-configuration/README.md","ref":"02-configuration/README.md","articles":[{"title":"Configuration via web.xml","level":"1.3.1","depth":2,"path":"02-configuration/01-xml.md","ref":"02-configuration/01-xml.md","articles":[]},{"title":"Configuration Java","level":"1.3.2","depth":2,"path":"02-configuration/02-java.md","ref":"02-configuration/02-java.md","articles":[]},{"title":"Activer Spring Web MVC","level":"1.3.3","depth":2,"path":"02-configuration/03-activer.md","ref":"02-configuration/03-activer.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"01-introduction/README.md","mtime":"2018-05-28T06:57:31.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T06:58:55.262Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ResponseEntity","level":"1.5.6","depth":2,"next":{"title":"Gérer les erreurs via des exceptions","level":"1.5.7","depth":2,"path":"04-webapi/07-erreurs.md","ref":"04-webapi/07-erreurs.md","articles":[]},"previous":{"title":"@RequestBody","level":"1.5.5","depth":2,"path":"04-webapi/05-request-body.md","ref":"04-webapi/05-request-body.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"04-webapi/06-response-entity.md","mtime":"2018-05-28T06:57:31.102Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T06:58:55.262Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

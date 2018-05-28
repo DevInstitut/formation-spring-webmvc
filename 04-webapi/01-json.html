@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Spring Web MVC · Formation Spring Web MVC</title>
+        <title>Le format JSON · Formation Spring Web MVC</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../02-configuration/" />
+    <link rel="next" href="02-jackson.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -109,9 +109,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
             
-                <a href="./">
+                <a href="../01-introduction/">
             
                     
                     Spring Web MVC
@@ -277,9 +277,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../04-webapi/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../04-webapi/">
+                <a href="./">
             
                     
                     Web API
@@ -291,9 +291,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../04-webapi/01-json.html">
+        <li class="chapter active" data-level="1.5.1" data-path="01-json.html">
             
-                <a href="../04-webapi/01-json.html">
+                <a href="01-json.html">
             
                     
                     Le format JSON
@@ -304,9 +304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../04-webapi/02-jackson.html">
+        <li class="chapter " data-level="1.5.2" data-path="02-jackson.html">
             
-                <a href="../04-webapi/02-jackson.html">
+                <a href="02-jackson.html">
             
                     
                     Projet Jackson
@@ -317,9 +317,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../04-webapi/03-responsebody.html">
+        <li class="chapter " data-level="1.5.3" data-path="03-responsebody.html">
             
-                <a href="../04-webapi/03-responsebody.html">
+                <a href="03-responsebody.html">
             
                     
                     @ResponseBody
@@ -330,9 +330,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../04-webapi/04-rest-controller.html">
+        <li class="chapter " data-level="1.5.4" data-path="04-rest-controller.html">
             
-                <a href="../04-webapi/04-rest-controller.html">
+                <a href="04-rest-controller.html">
             
                     
                     @RestController
@@ -343,9 +343,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../04-webapi/05-request-body.html">
+        <li class="chapter " data-level="1.5.5" data-path="05-request-body.html">
             
-                <a href="../04-webapi/05-request-body.html">
+                <a href="05-request-body.html">
             
                     
                     @RequestBody
@@ -356,9 +356,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../04-webapi/06-response-entity.html">
+        <li class="chapter " data-level="1.5.6" data-path="06-response-entity.html">
             
-                <a href="../04-webapi/06-response-entity.html">
+                <a href="06-response-entity.html">
             
                     
                     ResponseEntity
@@ -369,9 +369,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.7" data-path="../04-webapi/07-erreurs.html">
+        <li class="chapter " data-level="1.5.7" data-path="07-erreurs.html">
             
-                <a href="../04-webapi/07-erreurs.html">
+                <a href="07-erreurs.html">
             
                     
                     Gérer les erreurs via des exceptions
@@ -382,9 +382,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.8" data-path="../04-webapi/99-tp.html">
+        <li class="chapter " data-level="1.5.8" data-path="99-tp.html">
             
-                <a href="../04-webapi/99-tp.html">
+                <a href="99-tp.html">
             
                     
                     Travaux pratiques
@@ -460,7 +460,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Spring Web MVC</a>
+        <a href=".." >Le format JSON</a>
     </h1>
 </div>
 
@@ -475,7 +475,66 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="spring-web-mvc">Spring Web MVC</h1>
+                                <h1 id="le-format-json">Le format JSON</h1>
+<p>JSON ou <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation, est un format de fichier standard
+permettant de transmettre des donn&#xE9;es sous la forme de paires d&apos;attributs cl&#xE9;-valeur et de tableau.</p>
+<h2 id="types-de-base-json">Types de base JSON</h2>
+<ul>
+<li>Nombre</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;nombre_eleves&quot;</span> : <span class="hljs-number">12</span>
+}
+</code></pre>
+<ul>
+<li>Cha&#xEE;ne de caract&#xE8;res</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;prenom&quot;</span> : <span class="hljs-string">&quot;Jean&quot;</span>
+}
+</code></pre>
+<ul>
+<li>Bool&#xE9;en</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;actif&quot;</span> : <span class="hljs-literal">true</span>
+}
+</code></pre>
+<ul>
+<li>Tableau</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;liste_personnes&quot;</span> : [
+    {
+      <span class="hljs-string">&quot;prenom&quot;</span> : <span class="hljs-string">&quot;Hugues&quot;</span>,
+      <span class="hljs-string">&quot;age&quot;</span> : <span class="hljs-number">42</span>
+    },
+    {
+      <span class="hljs-string">&quot;prenom&quot;</span> : <span class="hljs-string">&quot;Thierry&quot;</span>,
+      <span class="hljs-string">&quot;age&quot;</span> : <span class="hljs-number">46</span>
+    }
+  ]
+}
+</code></pre>
+<pre><code class="lang-json">[
+    {
+      <span class="hljs-string">&quot;prenom&quot;</span> : <span class="hljs-string">&quot;Hugues&quot;</span>,
+      <span class="hljs-string">&quot;age&quot;</span> : <span class="hljs-number">42</span>
+    },
+    {
+      <span class="hljs-string">&quot;prenom&quot;</span> : <span class="hljs-string">&quot;Thierry&quot;</span>,
+      <span class="hljs-string">&quot;age&quot;</span> : <span class="hljs-number">46</span>
+    }
+]
+</code></pre>
+<ul>
+<li><code>null</code></li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;prenom&quot;</span> : <span class="hljs-string">&quot;Thierry&quot;</span>,
+  <span class="hljs-string">&quot;age&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
 
                                 
                                 </section>
@@ -503,12 +562,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Web API">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../02-configuration/" class="navigation navigation-next " aria-label="Next page: Configuration">
+                <a href="02-jackson.html" class="navigation navigation-next " aria-label="Next page: Projet Jackson">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -519,7 +578,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Spring Web MVC","level":"1.2","depth":1,"next":{"title":"Configuration","level":"1.3","depth":1,"path":"02-configuration/README.md","ref":"02-configuration/README.md","articles":[{"title":"Configuration via web.xml","level":"1.3.1","depth":2,"path":"02-configuration/01-xml.md","ref":"02-configuration/01-xml.md","articles":[]},{"title":"Configuration Java","level":"1.3.2","depth":2,"path":"02-configuration/02-java.md","ref":"02-configuration/02-java.md","articles":[]},{"title":"Activer Spring Web MVC","level":"1.3.3","depth":2,"path":"02-configuration/03-activer.md","ref":"02-configuration/03-activer.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"01-introduction/README.md","mtime":"2018-05-28T06:57:31.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T06:58:55.262Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Le format JSON","level":"1.5.1","depth":2,"next":{"title":"Projet Jackson","level":"1.5.2","depth":2,"path":"04-webapi/02-jackson.md","ref":"04-webapi/02-jackson.md","articles":[]},"previous":{"title":"Web API","level":"1.5","depth":1,"path":"04-webapi/README.md","ref":"04-webapi/README.md","articles":[{"title":"Le format JSON","level":"1.5.1","depth":2,"path":"04-webapi/01-json.md","ref":"04-webapi/01-json.md","articles":[]},{"title":"Projet Jackson","level":"1.5.2","depth":2,"path":"04-webapi/02-jackson.md","ref":"04-webapi/02-jackson.md","articles":[]},{"title":"@ResponseBody","level":"1.5.3","depth":2,"path":"04-webapi/03-responsebody.md","ref":"04-webapi/03-responsebody.md","articles":[]},{"title":"@RestController","level":"1.5.4","depth":2,"path":"04-webapi/04-rest-controller.md","ref":"04-webapi/04-rest-controller.md","articles":[]},{"title":"@RequestBody","level":"1.5.5","depth":2,"path":"04-webapi/05-request-body.md","ref":"04-webapi/05-request-body.md","articles":[]},{"title":"ResponseEntity","level":"1.5.6","depth":2,"path":"04-webapi/06-response-entity.md","ref":"04-webapi/06-response-entity.md","articles":[]},{"title":"Gérer les erreurs via des exceptions","level":"1.5.7","depth":2,"path":"04-webapi/07-erreurs.md","ref":"04-webapi/07-erreurs.md","articles":[]},{"title":"Travaux pratiques","level":"1.5.8","depth":2,"path":"04-webapi/99-tp.md","ref":"04-webapi/99-tp.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"04-webapi/01-json.md","mtime":"2018-05-28T06:57:31.098Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T06:58:55.262Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
