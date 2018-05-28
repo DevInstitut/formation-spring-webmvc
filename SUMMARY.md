@@ -20,4 +20,6 @@
   * [Gérer les erreurs via des exceptions](04-webapi/07-erreurs.md)
   * [Travaux pratiques](04-webapi/99-tp.md)
 * [Client API](05-client/README.md)
+  * [Récupérer une liste d'objets](05-client/01-recup-liste.md)
+  * [Récupérer un objet](05-client/02-recup-objet.md)
   * [Travaux Pratiques](05-client/99-tp.md)
