@@ -39,6 +39,9 @@ L'utilisation des taglibs est activée dans une JSP par la directive :
 
 * En ajout, la liaison aux données et la gestion des messages d'erreurs.
 
+
+https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/spring-form-tld.html
+
 ## Exemple de formulaire
 
 ```html
@@ -71,3 +74,4 @@ public String submitForm(@ModelAttribute("client") Client client) {
 
 L'objet client est peuplé selon les données de l'attribut du modèle nommé `client`.
 Cet attribut de modèle a été déclaré dans le formulaire.
+
