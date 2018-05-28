@@ -1,0 +1,788 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Travaux Pratiques · Formation Spring Web MVC</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../04-webapi/" />
+    
+    
+    <link rel="prev" href="05-formulaires.html" />
+    
+
+    </head>
+    <body>
+        
+
+
+<div class="book">
+    <div class="book-summary">
+        
+            <div class="theme-code-header">
+                <a href="./" class="link">
+                    <h1 class="title">Formation Spring Web MVC</h1>
+                </a>
+            </div>
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
+            
+                <a href="../01-introduction/">
+            
+                    
+                    Spring Web MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-configuration/">
+            
+                <a href="../02-configuration/">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-configuration/01-xml.html">
+            
+                <a href="../02-configuration/01-xml.html">
+            
+                    
+                    Configuration via web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-configuration/02-java.html">
+            
+                <a href="../02-configuration/02-java.html">
+            
+                    
+                    Configuration Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-configuration/03-activer.html">
+            
+                <a href="../02-configuration/03-activer.html">
+            
+                    
+                    Activer Spring Web MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Application multi-pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01-controller.html">
+            
+                <a href="01-controller.html">
+            
+                    
+                    Notion de contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-parametres.html">
+            
+                <a href="02-parametres.html">
+            
+                    
+                    Paramètres des méthodes de contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03-retour.html">
+            
+                <a href="03-retour.html">
+            
+                    
+                    Retour de méthode de contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04-vues.html">
+            
+                <a href="04-vues.html">
+            
+                    
+                    Gestion des vues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05-formulaires.html">
+            
+                <a href="05-formulaires.html">
+            
+                    
+                    Formulaires
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="99-tp.html">
+            
+                <a href="99-tp.html">
+            
+                    
+                    Travaux Pratiques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-webapi/">
+            
+                <a href="../04-webapi/">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04-webapi/01-responsebody.md">
+            
+                <span>
+            
+                    
+                    @ResponseBody
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04-webapi/02-rest-controller.md">
+            
+                <span>
+            
+                    
+                    @RestController
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-webapi/03-request-body.md">
+            
+                <span>
+            
+                    
+                    @RequestBody
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../04-webapi/04-response-entity.md">
+            
+                <span>
+            
+                    
+                    ResponseEntity
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../04-webapi/06-erreurs.md">
+            
+                <span>
+            
+                    
+                    Gérer les erreurs via des exceptions
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="" target="_blank" class="gitbook-link">Rossi Oddet</a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Travaux Pratiques</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="travaux-pratiques">Travaux Pratiques</h1>
+<h2 id="projet-sirh---gestion-de-la-paie">Projet SIRH - Gestion de la paie</h2>
+<p>Notre objectif est de cr&#xE9;er une application de g&#xE9;n&#xE9;ration d&apos;un bulletin de salaire.</p>
+<p><img src="images/01.employe.ajouter.png" alt="">
+<img src="images/02.employe.lister.png" alt="">
+<img src="images/03.creer.bulletin.png" alt="">
+<img src="images/04.lister.bulletins.png" alt="">
+<img src="images/06.visualiser.bulletin.png" alt=""></p>
+<h2 id="mise-en-place-de-lenvironnement-de-d&#xE9;veloppement">Mise en place de l&apos;environnement de d&#xE9;veloppement</h2>
+<h3 id="librairies-suppl&#xE9;mentaires">Librairies suppl&#xE9;mentaires</h3>
+<ul>
+<li>Ajouter la d&#xE9;pendance vers <em>Spring WebMVC</em> :</li>
+</ul>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-webmvc<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<ul>
+<li>La technologie de vue choisie est <em>JSP</em>. Nous allons ajouter une d&#xE9;pendance vers l&apos;API Servlet.</li>
+</ul>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>javax.servlet<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>javax.servlet-api<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>provided<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>Vous vous souvenez pourquoi <em><scope>provided</scope></em> ?</p>
+<ul>
+<li>La librairie de tag <em>JSTL</em> sera utilis&#xE9;e dans les pages JSP. Ajouter la d&#xE9;pendance suivante :</li>
+</ul>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>jstl<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jstl<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<ul>
+<li>Si ce n&apos;est pas d&#xE9;j&#xE0; fait, ajouter la d&#xE9;pendance vers <em>hibernate-java8</em> pour le support des dates Java 8 dans les mappings <em>JPA</em> :</li>
+</ul>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.hibernate<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>hibernate-java8<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${hibernate.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>runtime<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h3 id="conteneur-de-servlet">Conteneur de Servlet</h3>
+<p>Pour d&#xE9;ployer l&apos;application <em>sirh-gestion-paie</em>, nous allons utiliser le conteneur de servlet <em>Apache Tomcat</em>.</p>
+<ul>
+<li><p>T&#xE9;l&#xE9;charger Tomcat : <a href="https://tomcat.apache.org/download-80.cgi" target="_blank">https://tomcat.apache.org/download-80.cgi</a> (version 8.5.15, rubrique <em>Core &gt; zip</em>). D&#xE9;compresser l&apos;archive.</p>
+</li>
+<li><p>Cr&#xE9;er un fichier <em>src/main/webapp/index.html</em> : </p>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>PAIE<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>SIRH - Gestion de la paie<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p>D&#xE9;ployer depuis STS l&apos;application Web sous Tomcat. Comment on fait ? Vous allez trouver j&apos;en suis s&#xFB;r, souvenez-vous du cours de Java EE ;-)</p>
+</li>
+<li><p>V&#xE9;rifier que la page web s&apos;affiche dans le navigateur.</p>
+</li>
+<li><p>Profitez de l&apos;occasion pour ajouter <em>Twitter Bootstrap</em> au projet.</p>
+</li>
+</ul>
+<h3 id="mise-en-place-de-spring-mvc">Mise en place de Spring MVC</h3>
+<ul>
+<li>Cr&#xE9;er la classe de configuration <em>dev.paie.config.WebAppConfig</em> :</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@EnableWebMvc</span>
+<span class="hljs-meta">@ComponentScan</span>(<span class="hljs-string">&quot;dev.paie.web.controller&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebAppConfig</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ViewResolver <span class="hljs-title">viewResolver</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> InternalResourceViewResolver(<span class="hljs-string">&quot;/WEB-INF/views/&quot;</span>, <span class="hljs-string">&quot;.jsp&quot;</span>);
+    }
+
+}
+</code></pre>
+<ul>
+<li>Cr&#xE9;er un contr&#xF4;leur : <em>dev.paie.web.controller.RemunerationEmployeController</em> :</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Controller</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/employes&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RemunerationEmployeController</span> </span>{
+
+    <span class="hljs-meta">@RequestMapping</span>(method = RequestMethod.GET, path = <span class="hljs-string">&quot;/creer&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ModelAndView <span class="hljs-title">creerEmploye</span><span class="hljs-params">()</span> </span>{
+        ModelAndView mv = <span class="hljs-keyword">new</span> ModelAndView();
+        mv.setViewName(<span class="hljs-string">&quot;employes/creerEmploye&quot;</span>);
+        mv.addObject(<span class="hljs-string">&quot;prefixMatricule&quot;</span>,<span class="hljs-string">&quot;M00&quot;</span>);
+        <span class="hljs-keyword">return</span> mv;
+    }
+
+}
+</code></pre>
+<ul>
+<li>Cr&#xE9;er un fichier <em>src/main/webapp/WEB-INF/views/employes/creerEmploye.jsp</em> avec le contenu suivant :</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Cr&#xE9;er Employe<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Pr&#xE9;fixe Matricule : ${prefixMatricule}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<ul>
+<li>Cr&#xE9;er la classe de d&#xE9;marrage de Spring MVC <em>dev.paie.web.WebAppInitializer</em> :</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> dev.paie.web;
+
+<span class="hljs-keyword">import</span> javax.servlet.ServletContext;
+<span class="hljs-keyword">import</span> javax.servlet.ServletException;
+<span class="hljs-keyword">import</span> javax.servlet.ServletRegistration;
+
+<span class="hljs-keyword">import</span> org.springframework.web.WebApplicationInitializer;
+<span class="hljs-keyword">import</span> org.springframework.web.context.ContextLoaderListener;
+<span class="hljs-keyword">import</span> org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+<span class="hljs-keyword">import</span> org.springframework.web.servlet.DispatcherServlet;
+
+<span class="hljs-keyword">import</span> dev.paie.config.WebAppConfig;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebAppInitializer</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">WebApplicationInitializer</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onStartup</span><span class="hljs-params">(ServletContext servletContext)</span> <span class="hljs-keyword">throws</span> ServletException </span>{
+
+        <span class="hljs-comment">// Initialisation du contexte Spring</span>
+        AnnotationConfigWebApplicationContext webContext = <span class="hljs-keyword">new</span> AnnotationConfigWebApplicationContext();
+        webContext.register(WebAppConfig.class);
+
+        <span class="hljs-comment">/*
+        &lt;servlet&gt;
+                &lt;servlet-name&gt;dispatcher&lt;/servlet-name&gt;
+                &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;
+                &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+        &lt;/servlet&gt;
+         */</span>
+        ServletRegistration.Dynamic dispatcher = servletContext.addServlet(<span class="hljs-string">&quot;dispatcher&quot;</span>, <span class="hljs-keyword">new</span> DispatcherServlet(webContext));
+        dispatcher.setLoadOnStartup(<span class="hljs-number">1</span>);
+
+        <span class="hljs-comment">/*
+        &lt;servlet-mapping&gt;
+                &lt;servlet-name&gt;dispatcher&lt;/servlet-name&gt;
+                &lt;url-pattern&gt;/mvc<span class="hljs-comment">/*&lt;/url-pattern&gt;
+        &lt;/servlet-mapping&gt;
+         */</span>
+        dispatcher.addMapping(&quot;/mvc<span class="hljs-comment">/*&quot;);
+
+        <span class="hljs-comment">/*
+        &lt;listener&gt;
+            &lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;
+        &lt;/listener&gt;
+        */</span>
+        servletContext.addListener(new ContextLoaderListener(webContext));
+    }
+}
+</span></span></code></pre>
+<ul>
+<li>Red&#xE9;marrer l&apos;application et tester la page : <a href="http://localhost:8080/paie/mvc/employes/creer" target="_blank">http://localhost:8080/paie/mvc/employes/creer</a>. Vous devriez avoir le r&#xE9;sultat suivant :</li>
+</ul>
+<p><img src="images/creeremploye.png" alt=""></p>
+<h2 id="jeux-de-donn&#xE9;es">Jeux de donn&#xE9;es</h2>
+<p>Nous allons modifier l&apos;application pour avoir le comportement suivant : &#xE0; chaque red&#xE9;marrage, le sch&#xE9;ma de base de donn&#xE9;es est supprim&#xE9; puis recr&#xE9;&#xE9; et enfin un jeux de donn&#xE9;es est ins&#xE9;r&#xE9;.</p>
+<h3 id="drop-and-create">Drop And Create</h3>
+<p>Modifions la configuration JPA pour activer le mode <em>drop-and-create</em> de JPA.</p>
+<ul>
+<li>Modifier la classe <em>dev.paie.config.JpaConfig</em> comme suit :</li>
+</ul>
+<pre><code class="lang-java">...
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JpaConfig</span> </span>{
+    ...
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-comment">// Cette configuration ne&#x301;cessite une source de donne&#x301;es configure&#x301;e.</span>
+    <span class="hljs-comment">// Elle s&apos;utilise donc en association avec un autre fichier de configuration</span>
+    <span class="hljs-comment">// d e&#x301;finissant un bean DataSource.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> EntityManagerFactory <span class="hljs-title">entityManagerFactory</span><span class="hljs-params">(DataSource dataSource)</span> </span>{
+        HibernateJpaVendorAdapter vendorAdapter = <span class="hljs-keyword">new</span> HibernateJpaVendorAdapter();
+        <span class="hljs-comment">//vendorAdapter.setGenerateDdl(true); &lt;1&gt;</span>
+        <span class="hljs-comment">// activer les logs SQL</span>
+        vendorAdapter.setShowSql(<span class="hljs-keyword">true</span>);
+        LocalContainerEntityManagerFactoryBean factory = <span class="hljs-keyword">new</span> LocalContainerEntityManagerFactoryBean();
+        factory.setJpaVendorAdapter(vendorAdapter);
+        <span class="hljs-comment">// alternative au persistence.xml</span>
+        factory.setPackagesToScan(<span class="hljs-string">&quot;dev.paie.entite&quot;</span>);
+        factory.setDataSource(dataSource);
+        Properties jpaProperties = <span class="hljs-keyword">new</span> Properties(); &lt;<span class="hljs-number">2</span>&gt;
+        jpaProperties.setProperty(<span class="hljs-string">&quot;javax.persistence.schema-generation.database.action&quot;</span>, <span class="hljs-string">&quot;drop-and-create&quot;</span>);&lt;<span class="hljs-number">2</span>&gt;
+        factory.setJpaProperties(jpaProperties);&lt;<span class="hljs-number">2</span>&gt;
+        factory.afterPropertiesSet();
+        <span class="hljs-keyword">return</span> factory.getObject();
+    }
+}
+</code></pre>
+<p><1> Mettre un commentaire sur cette ligne</1></p>
+<p><2> Configurer le mode <em>drop-and-create</em>.</2></p>
+<ul>
+<li>V&#xE9;rifier que les donn&#xE9;es sont bien supprim&#xE9;es entre 2 red&#xE9;marrages.</li>
+</ul>
+<h3 id="service-initialiserdonneesservice">Service <em>InitialiserDonneesService</em></h3>
+<ul>
+<li>Cr&#xE9;er une interface <em>dev.paie.service.InitialiserDonneesService</em>.</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> dev.paie.service;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">InitialiserDonneesService</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">initialiser</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<ul>
+<li>Cr&#xE9;er un &#xE9;couteur de d&#xE9;marrage d&apos;une application Spring</li>
+</ul>
+<blockquote>
+<p>Cette classe doit faire partie du contexte Spring pour fonctionner.</p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> dev.paie.web.listener;
+
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.context.event.ContextRefreshedEvent;
+<span class="hljs-keyword">import</span> org.springframework.context.event.EventListener;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+
+<span class="hljs-keyword">import</span> dev.paie.service.InitialiserDonneesService;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StartUpAppListener</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> InitialiserDonneesService initService;
+
+    <span class="hljs-meta">@EventListener</span>(ContextRefreshedEvent.class)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">contextRefreshedEvent</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// capture du d&#xE9;marrage de l&apos;application</span>
+        <span class="hljs-comment">// &#xE0; un moment o&#xF9; le contexte Spring est compl&#xE8;tement cr&#xE9;&#xE9;</span>
+        initService.initialiser();
+    }
+}
+</code></pre>
+<ul>
+<li>Cr&#xE9;er une impl&#xE9;mentation de ce service <em>dev.paie.service.InitialiserDonneesServiceDev</em> qui ins&#xE8;re les donn&#xE9;es suivantes :<ul>
+<li>Cotisations</li>
+<li>Entreprises</li>
+<li>Grade</li>
+<li>ProfilRemuneration</li>
+<li>Periode</li>
+</ul>
+</li>
+</ul>
+<p>Pour vous &#xE9;viter une saisie fastidieuse des donn&#xE9;es, je vous fournis les fichiers suivants : <code>cotisations-imposables.xml</code>, <code>cotisations-non-imposables.xml</code>,
+<code>entreprises.xml</code>, <code>grades.xml</code>, <code>profils-remuneration.xml</code>.</p>
+<p>A vous de r&#xE9;cup&#xE9;rer ces donn&#xE9;es et les ins&#xE9;rer programmatiquement en base de donn&#xE9;es.</p>
+<p>Pas de XML pour les p&#xE9;riodes ? Exact ! Vous allez g&#xE9;n&#xE9;rer 12 p&#xE9;riodes programmatiquement de l&apos;ann&#xE9;e courante.</p>
+<p>Pour 2017, vous aurez par exemple :</p>
+<pre><code>1  -&gt; 2017-01-01 - 2017-01-31
+2  -&gt; 2017-02-01 - 2017-02-28
+3  -&gt; 2017-03-01 - 2017-03-31
+4  -&gt; 2017-04-01 - 2017-04-30
+5  -&gt; 2017-05-01 - 2017-05-31
+6  -&gt; 2017-06-01 - 2017-06-30
+7  -&gt; 2017-07-01 - 2017-07-31
+8  -&gt; 2017-08-01 - 2017-08-31
+9  -&gt; 2017-09-01 - 2017-09-30
+10 -&gt; 2017-10-01 - 2017-10-31
+11 -&gt; 2017-11-01 - 2017-11-30
+12 -&gt; 2017-12-01 - 2017-12-31
+</code></pre><ul>
+<li>Ecrivez tout le code n&#xE9;cessaire pour ins&#xE9;rer toutes les donn&#xE9;es au d&#xE9;marrage de l&apos;application.</li>
+</ul>
+<h2 id="page-cr&#xE9;er-employ&#xE9;">Page Cr&#xE9;er employ&#xE9;</h2>
+<ul>
+<li>Impl&#xE9;menter la page de cr&#xE9;ation d&apos;un employ&#xE9;.</li>
+</ul>
+<p><img src="images/01.employe.ajouter.png" alt=""></p>
+<h2 id="page-lister-employ&#xE9;s">Page Lister employ&#xE9;s</h2>
+<ul>
+<li>Impl&#xE9;menter la page de liste des employ&#xE9;s.</li>
+</ul>
+<p><img src="images/02.employe.lister.png" alt=""></p>
+<h2 id="page-cr&#xE9;er-bulletin">Page Cr&#xE9;er bulletin</h2>
+<ul>
+<li>Impl&#xE9;menter la page g&#xE9;n&#xE9;ration d&apos;un bulletin de salaire.</li>
+</ul>
+<p><img src="images/03.creer.bulletin.png" alt=""></p>
+<h2 id="page-lister-bulletin">Page Lister bulletin</h2>
+<ul>
+<li>Impl&#xE9;menter la page de liste de bulletins.</li>
+</ul>
+<p><img src="images/04.lister.bulletins.png" alt=""></p>
+<h2 id="page-visualiser-bulletin">Page Visualiser bulletin</h2>
+<ul>
+<li>Impl&#xE9;menter la page de visualisation de bulletin.</li>
+</ul>
+<p><img src="images/06.visualiser.bulletin.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-formulaires.html" class="navigation navigation-prev " aria-label="Previous page: Formulaires">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../04-webapi/" class="navigation navigation-next " aria-label="Next page: Web API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Travaux Pratiques","level":"1.4.6","depth":2,"next":{"title":"Web API","level":"1.5","depth":1,"path":"04-webapi/README.md","ref":"04-webapi/README.md","articles":[{"title":"@ResponseBody","level":"1.5.1","depth":2,"path":"04-webapi/01-responsebody.md","ref":"04-webapi/01-responsebody.md","articles":[]},{"title":"@RestController","level":"1.5.2","depth":2,"path":"04-webapi/02-rest-controller.md","ref":"04-webapi/02-rest-controller.md","articles":[]},{"title":"@RequestBody","level":"1.5.3","depth":2,"path":"04-webapi/03-request-body.md","ref":"04-webapi/03-request-body.md","articles":[]},{"title":"ResponseEntity","level":"1.5.4","depth":2,"path":"04-webapi/04-response-entity.md","ref":"04-webapi/04-response-entity.md","articles":[]},{"title":"Gérer les erreurs via des exceptions","level":"1.5.5","depth":2,"path":"04-webapi/06-erreurs.md","ref":"04-webapi/06-erreurs.md","articles":[]}]},"previous":{"title":"Formulaires","level":"1.4.5","depth":2,"path":"03-multipage/05-formulaires.md","ref":"03-multipage/05-formulaires.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"03-multipage/99-tp.md","mtime":"2018-05-28T06:55:40.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T06:56:59.806Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
