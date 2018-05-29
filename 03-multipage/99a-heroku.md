@@ -132,7 +132,7 @@ public class HerokuDBConfig {
 
 ![](images/heroku-3.png)
 
-* Donner un nom unique à l'application.
+* Donner un nom unique à l'application : exemple `valentin-sgp`.
 
 ![](images/heroku-4.png)
 
@@ -140,15 +140,15 @@ public class HerokuDBConfig {
 
 ![](images/heroku-5.png)
 
-* Sélectionner votre projet (version fork)
+* Sélectionner votre projet (version fork) : `sirh-gestion-paie`
 
 ![](images/heroku-6.png)
 
-* Activer le déploiement automatique en cliquant sur `Enable Automatic Deploys`.
+* Activer le déploiement automatique en cliquant sur `Enable Automatic Deploys` sur la branche **production**.
 
 ![](images/heroku-7.png) 
 
-* Cliquer sur `Deploy Branch`.
+* Cliquer sur `Deploy Branch` pour la branche **production**.
 
 ![](images/heroku-8.png)
 
