@@ -1,0 +1,758 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Déploiement Heroku · Formation Spring Web MVC</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../04-webapi/" />
+    
+    
+    <link rel="prev" href="99-tp.html" />
+    
+
+    </head>
+    <body>
+        
+
+
+<div class="book">
+    <div class="book-summary">
+        
+            <div class="theme-code-header">
+                <a href="./" class="link">
+                    <h1 class="title">Formation Spring Web MVC</h1>
+                </a>
+            </div>
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
+            
+                <a href="../01-introduction/">
+            
+                    
+                    Spring Web MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-configuration/">
+            
+                <a href="../02-configuration/">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-configuration/01-xml.html">
+            
+                <a href="../02-configuration/01-xml.html">
+            
+                    
+                    Configuration via web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-configuration/02-java.html">
+            
+                <a href="../02-configuration/02-java.html">
+            
+                    
+                    Configuration Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-configuration/03-activer.html">
+            
+                <a href="../02-configuration/03-activer.html">
+            
+                    
+                    Activer Spring Web MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Application multi-pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01-controller.html">
+            
+                <a href="01-controller.html">
+            
+                    
+                    Notion de contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-parametres.html">
+            
+                <a href="02-parametres.html">
+            
+                    
+                    Paramètres des méthodes de contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03-retour.html">
+            
+                <a href="03-retour.html">
+            
+                    
+                    Retour de méthode de contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04-vues.html">
+            
+                <a href="04-vues.html">
+            
+                    
+                    Gestion des vues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05-formulaires.html">
+            
+                <a href="05-formulaires.html">
+            
+                    
+                    Formulaires
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="99-tp.html">
+            
+                <a href="99-tp.html">
+            
+                    
+                    Travaux Pratiques
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.7" data-path="99a-heroku.html">
+            
+                <a href="99a-heroku.html">
+            
+                    
+                    Déploiement Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-webapi/">
+            
+                <a href="../04-webapi/">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04-webapi/01-json.html">
+            
+                <a href="../04-webapi/01-json.html">
+            
+                    
+                    Le format JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04-webapi/02-jackson.html">
+            
+                <a href="../04-webapi/02-jackson.html">
+            
+                    
+                    Projet Jackson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-webapi/03-responsebody.html">
+            
+                <a href="../04-webapi/03-responsebody.html">
+            
+                    
+                    @ResponseBody
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../04-webapi/04-rest-controller.html">
+            
+                <a href="../04-webapi/04-rest-controller.html">
+            
+                    
+                    @RestController
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../04-webapi/05-request-body.html">
+            
+                <a href="../04-webapi/05-request-body.html">
+            
+                    
+                    @RequestBody
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../04-webapi/06-response-entity.html">
+            
+                <a href="../04-webapi/06-response-entity.html">
+            
+                    
+                    ResponseEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../04-webapi/07-erreurs.html">
+            
+                <a href="../04-webapi/07-erreurs.html">
+            
+                    
+                    Gérer les erreurs via des exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../04-webapi/99-tp.html">
+            
+                <a href="../04-webapi/99-tp.html">
+            
+                    
+                    Travaux pratiques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-client/">
+            
+                <a href="../05-client/">
+            
+                    
+                    Client API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05-client/01-recup-liste.html">
+            
+                <a href="../05-client/01-recup-liste.html">
+            
+                    
+                    Récupérer une liste d'objets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05-client/02-recup-objet.html">
+            
+                <a href="../05-client/02-recup-objet.html">
+            
+                    
+                    Récupérer un objet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05-client/99-tp.html">
+            
+                <a href="../05-client/99-tp.html">
+            
+                    
+                    Travaux Pratiques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="" target="_blank" class="gitbook-link">Rossi Oddet</a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Déploiement Heroku</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="d&#xE9;ploiement-heroku">D&#xE9;ploiement Heroku</h1>
+<p>Heroku est une plateforme de d&#xE9;ploiement d&apos;applications.</p>
+<h2 id="branche-production">Branche production</h2>
+<ul>
+<li>Cr&#xE9;er une branche de production</li>
+</ul>
+<pre><code>git checkout -b production
+</code></pre><h2 id="configuration-d&#xE9;ploiement-heroku">Configuration d&#xE9;ploiement Heroku</h2>
+<ul>
+<li>Modifier le fichier <code>pom.xml</code> dans la rubrique <code>&lt;build&gt;</code>.</li>
+</ul>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">build</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">finalName</span>&gt;</span>paie<span class="hljs-tag">&lt;/<span class="hljs-name">finalName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">pluginManagement</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">plugins</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>maven-war-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">failOnMissingWebXml</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">failOnMissingWebXml</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">plugins</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">pluginManagement</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- PARTIE A AJOUTER --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">plugins</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>maven-dependency-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.0.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">executions</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">execution</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">phase</span>&gt;</span>package<span class="hljs-tag">&lt;/<span class="hljs-name">phase</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">goals</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">goal</span>&gt;</span>copy<span class="hljs-tag">&lt;/<span class="hljs-name">goal</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">goals</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">artifactItems</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.github.jsimone<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>webapp-runner<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>8.5.27.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">destFileName</span>&gt;</span>webapp-runner.jar<span class="hljs-tag">&lt;/<span class="hljs-name">destFileName</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">artifactItems</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">execution</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">executions</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">plugins</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">build</span>&gt;</span>
+</code></pre>
+<ul>
+<li>Modifier le fichier <code>pom.xml</code> pour ajouter la d&#xE9;pendance vers le driver <code>postgresql</code> :</li>
+</ul>
+<pre><code class="lang-java">&lt;dependency&gt;
+    &lt;groupId&gt;org.postgresql&lt;/groupId&gt;
+    &lt;artifactId&gt;postgresql&lt;/artifactId&gt;
+    &lt;version&gt;42.1.1&lt;/version&gt;
+    &lt;scope&gt;runtime&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre>
+<ul>
+<li><p>Supprimer les d&#xE9;pendances vers les drivers <code>MYSQL</code>, <code>MariadDB</code> et <code>H2</code>, s&apos;il existent.</p>
+</li>
+<li><p>Ajouter un fichier <code>Procfile</code> &#xE0; la racine du d&#xE9;p&#xF4;t Git avec le contenu suivant :</p>
+</li>
+</ul>
+<pre><code>web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+</code></pre><ul>
+<li>Cr&#xE9;er une nouvelle source de donn&#xE9;es <code>dev.paie.config.HerokuDBConfig</code> comme suit :</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> dev.paie.config;
+
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Bean;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Configuration;
+<span class="hljs-keyword">import</span> org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+<span class="hljs-keyword">import</span> javax.sql.DataSource;
+<span class="hljs-keyword">import</span> java.net.URI;
+<span class="hljs-keyword">import</span> java.net.URISyntaxException;
+
+<span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HerokuDBConfig</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> DataSource <span class="hljs-title">dataSource</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> URISyntaxException </span>{
+
+        URI dbUri = <span class="hljs-keyword">new</span> URI(System.getenv(<span class="hljs-string">&quot;DATABASE_URL&quot;</span>));
+
+        String username = dbUri.getUserInfo().split(<span class="hljs-string">&quot;:&quot;</span>)[<span class="hljs-number">0</span>];
+        String password = dbUri.getUserInfo().split(<span class="hljs-string">&quot;:&quot;</span>)[<span class="hljs-number">1</span>];
+        String dbUrl = <span class="hljs-string">&quot;jdbc:postgresql://&quot;</span> + dbUri.getHost() + <span class="hljs-string">&apos;:&apos;</span> + dbUri.getPort() + dbUri.getPath() + <span class="hljs-string">&quot;?sslmode=require&quot;</span>;
+
+
+        DriverManagerDataSource dataSource = <span class="hljs-keyword">new</span> DriverManagerDataSource();
+        dataSource.setUrl(dbUrl);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
+
+        <span class="hljs-keyword">return</span> dataSource;
+    }
+
+}
+</code></pre>
+<ul>
+<li><p>Configurer votre application pour que ce soit cette source de donn&#xE9;es qui soit prise en compte au d&#xE9;marrage de l&apos;application Web.</p>
+</li>
+<li><p>Commiter et Pusher la nouvelle branche sur votre d&#xE9;p&#xF4;t</p>
+</li>
+</ul>
+<h2 id="configuration-d&#xE9;ploiement-heroku">Configuration d&#xE9;ploiement Heroku</h2>
+<ul>
+<li>Aller sur le site d&apos;Heroku : <a href="https://www.heroku.com/" target="_blank">https://www.heroku.com/</a> et Cliquer sur <code>Signup</code>.</li>
+</ul>
+<p><img src="images/heroku-1.png" alt=""></p>
+<ul>
+<li>Remplir le formulaire d&apos;inscription.</li>
+</ul>
+<p><img src="images/heroku-2.png" alt=""></p>
+<ul>
+<li>Cliquer sur <code>Create new App</code>.</li>
+</ul>
+<p><img src="images/heroku-3.png" alt=""></p>
+<ul>
+<li>Donner un nom unique &#xE0; l&apos;application : exemple <code>valentin-sgp</code>.</li>
+</ul>
+<p><img src="images/heroku-4.png" alt=""></p>
+<ul>
+<li>Cliquer sur Github, se connecter &#xE0; Github</li>
+</ul>
+<p><img src="images/heroku-5.png" alt=""></p>
+<ul>
+<li>S&#xE9;lectionner votre projet (version fork) : <code>sirh-gestion-paie</code></li>
+</ul>
+<p><img src="images/heroku-6.png" alt=""></p>
+<ul>
+<li>Activer le d&#xE9;ploiement automatique en cliquant sur <code>Enable Automatic Deploys</code> sur la branche <strong>production</strong>.</li>
+</ul>
+<p><img src="images/heroku-7.png" alt=""> </p>
+<ul>
+<li>Cliquer sur <code>Deploy Branch</code> pour la branche <strong>production</strong>.</li>
+</ul>
+<p><img src="images/heroku-8.png" alt=""></p>
+<ul>
+<li>Pour visualiser les logs, cliquer sur <code>More &gt; View logs</code>.</li>
+</ul>
+<p><img src="images/heroku-10.png" alt=""></p>
+<p>Les donn&#xE9;es sont stock&#xE9;es dans une base PostgreSQL automatiquement configur&#xE9;e par Heroku.</p>
+<p>Les informations de connexion sont consultables dans la rubrique <code>Resource</code> (en cliquant sur la base de donn&#xE9;es).</p>
+<p><img src="images/heroku-11.png" alt=""></p>
+<p>Si vous souhaitez visualiser le contenu de la base de donn&#xE9;es distante, vous pouvez installer le client <a href="https://www.pgadmin.org/" target="_blank">PgAdmin</a>.</p>
+<h2 id="mise-&#xE0;-jour-pull-request">Mise &#xE0; jour pull-request</h2>
+<ul>
+<li>Compl&#xE9;ter la pull request avec l&apos;URL de l&apos;application Heroku.</li>
+</ul>
+<p><img src="images/commentaire-pull-request.png" alt=""></p>
+<h2 id="mise-&#xE0;-jour-de-la-branche-production">Mise &#xE0; jour de la branche production</h2>
+<ul>
+<li>Pensez &#xE0; faire un <code>merge</code> de la branche <code>production</code> &#xE0; chaque fois que vous souhaitez mettre &#xE0; disposition votre application.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="99-tp.html" class="navigation navigation-prev " aria-label="Previous page: Travaux Pratiques">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../04-webapi/" class="navigation navigation-next " aria-label="Next page: Web API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Déploiement Heroku","level":"1.4.7","depth":2,"next":{"title":"Web API","level":"1.5","depth":1,"path":"04-webapi/README.md","ref":"04-webapi/README.md","articles":[{"title":"Le format JSON","level":"1.5.1","depth":2,"path":"04-webapi/01-json.md","ref":"04-webapi/01-json.md","articles":[]},{"title":"Projet Jackson","level":"1.5.2","depth":2,"path":"04-webapi/02-jackson.md","ref":"04-webapi/02-jackson.md","articles":[]},{"title":"@ResponseBody","level":"1.5.3","depth":2,"path":"04-webapi/03-responsebody.md","ref":"04-webapi/03-responsebody.md","articles":[]},{"title":"@RestController","level":"1.5.4","depth":2,"path":"04-webapi/04-rest-controller.md","ref":"04-webapi/04-rest-controller.md","articles":[]},{"title":"@RequestBody","level":"1.5.5","depth":2,"path":"04-webapi/05-request-body.md","ref":"04-webapi/05-request-body.md","articles":[]},{"title":"ResponseEntity","level":"1.5.6","depth":2,"path":"04-webapi/06-response-entity.md","ref":"04-webapi/06-response-entity.md","articles":[]},{"title":"Gérer les erreurs via des exceptions","level":"1.5.7","depth":2,"path":"04-webapi/07-erreurs.md","ref":"04-webapi/07-erreurs.md","articles":[]},{"title":"Travaux pratiques","level":"1.5.8","depth":2,"path":"04-webapi/99-tp.md","ref":"04-webapi/99-tp.md","articles":[]}]},"previous":{"title":"Travaux Pratiques","level":"1.4.6","depth":2,"path":"03-multipage/99-tp.md","ref":"03-multipage/99-tp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","theme-dev-institut"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"search":{},"theme-dev-institut":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"DevInstitut/formation-spring-webmvc","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://www.dev-institut.fr/img/logo.svg","style":"width: 50px"}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Web MVC","gitbook":"*"},"file":{"path":"03-multipage/99a-heroku.md","mtime":"2018-05-29T13:47:22.384Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-29T13:48:22.403Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
