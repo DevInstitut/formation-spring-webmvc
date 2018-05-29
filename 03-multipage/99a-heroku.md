@@ -118,8 +118,6 @@ public class HerokuDBConfig {
 
 ## Configuration déploiement Heroku
 
-## Déploiement Heroku
-
 * Aller sur le site d'Heroku : https://www.heroku.com/ et Cliquer sur `Signup`.
 
 ![](images/heroku-1.png)
@@ -164,3 +162,16 @@ Les informations de connexion sont consultables dans la rubrique `Resource` (en 
 ![](images/heroku-11.png)
 
 Si vous souhaitez visualiser le contenu de la base de données distante, vous pouvez installer le client [PgAdmin](https://www.pgadmin.org/).
+
+
+## Mise à jour pull-request
+
+* Compléter la pull request avec l'URL de l'application Heroku.
+
+![](images/commentaire-pull-request.png)
+
+
+## Mise à jour de la branche production
+
+* Pensez à faire un `merge` de la branche `production` à chaque fois que vous souhaitez mettre à disposition votre application.
+
