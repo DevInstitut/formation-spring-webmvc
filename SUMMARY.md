@@ -10,6 +10,7 @@
   * [Gestion des vues](03-multipage/04-vues.md)
   * [Formulaires](03-multipage/05-formulaires.md)
   * [Travaux Pratiques](03-multipage/99-tp.md)
+  * [Déploiement Heroku](03-multipage/99a-heroku.md)
 * [Web API](04-webapi/README.md)
   * [Le format JSON](04-webapi/01-json.md)
   * [Projet Jackson](04-webapi/02-jackson.md)
